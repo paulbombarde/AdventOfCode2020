@@ -14,7 +14,7 @@ for l in open(sys.argv[1]) :
         #print(m, m_or, m_and, mask_or, mask_and)
     else :
         [m,e,v]=l.split()
-        r = int(m.split('[')[1][:-1])
+        r = int(m[4:-1])
         v = int(v)
         v |= mask_or
         v &= mask_and
